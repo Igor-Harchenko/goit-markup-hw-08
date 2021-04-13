@@ -1,0 +1,13 @@
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--footer-background-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer__container {
+  display: flex;
+  align-items: baseline;
+}

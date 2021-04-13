@@ -1,0 +1,37 @@
+.footer__navigation {
+  margin-right: 70px;
+}
+
+.address {
+  font-style: normal;
+  margin-top: 20px;
+}
+
+.footer__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.footer__item {
+  &:not(:last-child) {
+    margin-bottom: 9px;
+  }
+}
+
+.footer__address {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--header-background-color);
+}
+
+.footer__mail-tel {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--footer-mail-tel);
+}

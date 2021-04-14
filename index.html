@@ -162,7 +162,7 @@
         </section>
 
         <!--OUR-WORK-->
-        <!-- <section class="our-work">
+        <section class="our-work">
             <div class="container">
                 <h2 class="our-work__title suptitle">Чем мы занимаемся</h2>
                 <ul class="list our-work__list">
@@ -182,16 +182,20 @@
                     </li>
                 </ul>
             </div>
-        </section> -->
+        </section>
 
         <!--TEAM-->        
-        <!-- <section class="team">
+        <section class="team">
             <div class="container">
                 <h2 class="team__title suptitle">Наша команда</h2>
                 <ul class="list team__list">
                     <li class="team__item">
-                        <img class="team__img" src="./images/team/igor-img-1.jpg" alt="корткостриженный улыбающийся мужчина в очках" width="270"
-                            height="260">
+                        <picture class="picture">
+                            <source srcset="./images/team/igor-img-desktop.jpg 1x, ./images/team/igor-img-desktop@2x.jpg 2x" media="(min-width: 1200px)">
+                            <source srcset="./images/team/igor-img-tablet.jpg 1x, ./images/team/igor-img-tablet@2x.jpg 2x" media="(min-width: 768px)">
+                            <source srcset="./images/team/igor-img-mob.jpg 1x, ./images/team/igor-img-mob@2x.jpg 2x" media="(min-width: 320px)">
+                            <img class="team__img" src="./images/team/igor-img-mob.jpg" alt="корткостриженный улыбающийся мужчина в очках">
+                        </picture>
                         <div class="team__wrapper">
                             <h3 class="team__name">Игорь Демьяненко</h3>
                             <p class="team__position" lang="en">Product Designer</p>
@@ -228,7 +232,14 @@
                         </div>
                     </li>
                     <li class="team__item">
-                        <img class="team__img" src="./images/team/olga-img-2.jpg" alt="улыбающаяся длинноволосая блондинка" width="270" height="260">
+                        <picture class="picture">
+                            <source srcset="./images/team/olga-img-desktop.jpg 1x, ./images/team/olga-img-desktop@2x.jpg 2x"
+                                media="(min-width: 1200px)">
+                            <source srcset="./images/team/olga-img-tablet.jpg 1x, ./images/team/olga-img-tablet@2x.jpg 2x"
+                                media="(min-width: 768px)">
+                            <source srcset="./images/team/olga-img-mob.jpg 1x, ./images/team/olga-img-mob@2x.jpg 2x" media="(min-width: 320px)">
+                            <img class="team__img" src="./images/team/olga-img-mob.jpg" alt="корткостриженный улыбающийся мужчина в очках">
+                        </picture>
                         <div class="team__wrapper">
                             <h3 class="team__name">Ольга Репина</h3>
                             <p class="team__position" lang="en">Frontend Developer</p>
@@ -265,7 +276,14 @@
                         </div>
                     </li>
                     <li class="team__item">
-                        <img class="team__img" src="./images/team/kolya-img-3.jpg" alt="короткостриженный улыбающийся мужчина" width="270" height="260">
+                        <picture class="picture">
+                            <source srcset="./images/team/kolya-img-desktop.jpg 1x, ./images/team/kolya-img-desktop@2x.jpg 2x"
+                                media="(min-width: 1200px)">
+                            <source srcset="./images/team/kolya-img-tablet.jpg 1x, ./images/team/kolya-img-tablet@2x.jpg 2x"
+                                media="(min-width: 768px)">
+                            <source srcset="./images/team/kolya-img-mob.jpg 1x, ./images/team/kolya-img-mob@2x.jpg 2x" media="(min-width: 320px)">
+                            <img class="team__img" src="./images/team/kolya-img-mob.jpg" alt="корткостриженный улыбающийся мужчина в очках">
+                        </picture>
                         <div class="team__wrapper">
                             <h3 class="team__name">Николай Тарасов</h3>
                             <p class="team__position" lang="en">Marketing</p>
@@ -302,7 +320,15 @@
                         </div>
                     </li>
                     <li class="team__item">
-                        <img class="team__img" src="./images/team/misha-img-4.jpg" alt="короткостриженный улыбающийся мужчина" width="270" height="260">
+                        <picture class="picture">
+                            <source srcset="./images/team/misha-img-desktop.jpg 1x, ./images/team/misha-img-desktop@2x.jpg 2x"
+                                media="(min-width: 1200px)">
+                            <source srcset="./images/team/misha-img-tablet.jpg 1x, ./images/team/misha-img-tablet@2x.jpg 2x"
+                                media="(min-width: 768px)">
+                            <source srcset="./images/team/misha-img-mob.jpg 1x, ./images/team/misha-img-mob@2x.jpg 2x"
+                                media="(min-width: 320px)">
+                            <img class="team__img" src="./images/team/misha-img-mob.jpg" alt="корткостриженный улыбающийся мужчина в очках">
+                        </picture>
                         <div class="team__wrapper">
                             <h3 class="team__name">Михаил Ермаков</h3>
                             <p class="team__position" lang="en">UI Designer</p>
@@ -340,10 +366,10 @@
                     </li>
                 </ul>
             </div>
-        </section> -->
+        </section>
        
         <!--CLIENTS-->        
-        <!-- <section class="client">
+        <section class="client">
             <div class="container">
                 <h2 class="client__title suptitle">Постоянные клиенты</h2>
                 <ul class="client__list list">
@@ -391,10 +417,10 @@
                     </li>
                 </ul>
             </div>
-        </section> -->
+        </section>
     
     </main>
-    <!-- <footer class="footer">
+    <footer class="footer">
         <div class="container footer__container">
             <div class="footer__navigation">
                 <a class="logo link" href="./index.html"> Web<span class="logo_theme-dark">Studio</span></a>
@@ -459,9 +485,9 @@
                 </form>
             </div>
         </div>
-    </footer>   -->
+    </footer>  
     
-    <!-- <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button type="button" class="modal__close-btn" data-modal-close>
                 <svg width="18px" height="18px">
@@ -513,9 +539,9 @@
                 
             </form>
         </div>
-    </div> -->
+    </div>
 
-    <!-- <script src="./js/modal.js"></script> -->
+    <script src="./js/modal.js"></script>
     <script src="./js/mobile-menu.js"></script>
 </body>
 

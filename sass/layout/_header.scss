@@ -29,6 +29,7 @@
     padding-bottom: 10px;
     background-color: var(--header-background-color);
     border-bottom: 1px solid #ececec;
+    margin: 0 auto;
   }
 
   .header__container {
@@ -72,7 +73,6 @@
     top: 0;
     left: 48.5%;
     width: 100%;
-    max-width: 480px;
     height: 100%;
     padding: 48px 40px;
     background-color: var(--header-background-color);

@@ -4,6 +4,7 @@
     align-items: flex-start;
     justify-content: flex-start;
     flex-wrap: wrap;
+    width: 450px;
   }
 
   .portfolio__btn-item {
@@ -39,7 +40,7 @@
   }
 }
 
-@media screen and (min-width: 768px) and (max-width:1199px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .portfolio__btn-list {
     display: flex;
     align-items: center;

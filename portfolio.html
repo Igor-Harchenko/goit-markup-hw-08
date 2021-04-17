@@ -36,6 +36,11 @@
                     </li>
                 </ul>
             </nav>
+            <button class="header__burger" type="button" data-menu-button>
+                <svg class="header__burger-icon">
+                    <use href="./images/sprites.svg#icon-burger"></use>
+                </svg>
+            </button>
             <ul class="list contact-list">
                 <li class="contact-list__item">
                     <a class="contact-list__link link" href="mailto:info@devstudio.com">
@@ -51,6 +56,53 @@
                 </li>
             </ul>
         </div>
+        <div class="mobile-menu is-open" data-menu>
+            <button type="button" class="mobile-menu__close-btn" data-menu-close>
+                <svg class="mobile-menu__close-icon">
+                    <use href="./images/sprites.svg#icon-btn-close"></use>
+                </svg>
+            </button>
+            <ul class="mobile-menu__list list">
+                <li class="mobile-menu__item">
+                    <a href="./index.html" class="mobile-menu__link link">Студия</a>
+                </li>
+                <li class="mobile-menu__item">
+                    <a href="./portfolio.html" class="mobile-menu__link menu__active link">Портфолио</a>
+                </li>
+                <li class="mobile-menu__item">
+                    <a href="" class="mobile-menu__link link">Контакты</a>
+                </li>
+            </ul>
+            <ul class="list mobile-menu__contact">
+                <li class="mobile-menu__contact-item">
+                    <a class="mobile-menu__contact-tel link" href="tel:+380991111111">
+                        +38 099 111 11 11</a>
+                </li>
+                <li class="mobile-menu__contact-item">
+                    <a class="mobile-menu__contact-mail link" href="mailto:info@devstudio.com">
+                        info@devstudio.com</a>
+                </li>
+            </ul>
+            <ul class="mobile-menu__social-list list">
+                <li class="mobile-menu__social-item">
+                    <a href="" class="mobile-menu__social-link link">
+                        Instagram</a>
+                </li>
+                <li class="mobile-menu__social-item">
+                    <a href="" class="mobile-menu__social-link link">
+                        Twitter</a>
+                </li>
+                <li class="mobile-menu__social-item">
+                    <a href="" class="mobile-menu__social-link link">
+                        Facebook</a>
+                </li>
+                <li class="mobile-menu__social-item">
+                    <a href="" class="mobile-menu__social-link link">
+                        Linkedin</a>
+                </li>
+            </ul>
+        </div>
+
     </header>
     
     <main class="portfolio">
@@ -74,13 +126,19 @@
                         <button class="portfolio__btn link" type="button">Маркетинг</button>
                     </li>
                 </ul>
-            
                 <ul class="portfolio__list">
                     <li class="list portfolio__item">
                         <a class="link portfolio__link" href="">
                             <div class="portfolio__overlay">
-                                <img class="potfolio__img" src="./images/portfolio/our-projects-1.jpg"
-                                    alt="монитор ноутбука, на котором три фотокарточки людей с пояснениями" width="370" height="294">
+                                <picture class="picture">
+                                    <source srcset="./images/portfolio/our-project-1-desktop.jpg 1x, ./images/portfolio/our-project-1-desktop@2x.jpg 2x"
+                                        media="(min-width: 1200px)">
+                                    <source srcset="./images/portfolio/our-project-1-tablet.jpg 1x, ./images/portfolio/our-project-1-tablet@2x.jpg 2x"
+                                        media="(min-width: 768px)">
+                                    <source srcset="./images/portfolio/our-project-1-mob.jpg 1x, ./images/portfolio/our-project-1-mob@2x.jpg 2x" 
+                                        media="(min-width: 320px)">
+                                    <img class="potfolio__img" src="./images/portfolio/our-project-1-mob.jpg" alt="монитор ноутбука, на котором три фотокарточки людей с пояснениями">
+                                </picture>
                                 <p class="portfolio__overlay-txt">Технокряк это современная площадка распространения коронавируса. Компании
                                 используют эту платформу для цифрового шпионажа и атак на защищённые сервера.
                                 </p>
@@ -94,7 +152,16 @@
                     <li class="list portfolio__item">
                         <a class="link portfolio__link" href="">
                             <div class="portfolio__overlay">
-                                <img class="potfolio__img" src="./images/portfolio/our-projects-2.jpg" alt="два баскетболиста в синей и белой форме борются за мяч в прыжке" width="370" height="294">
+                                <picture class="picture">
+                                    <source srcset="./images/portfolio/our-project-2-desktop.jpg 1x, ./images/portfolio/our-project-2-desktop@2x.jpg 2x"
+                                        media="(min-width: 1200px)">
+                                    <source srcset="./images/portfolio/our-project-2-tablet.jpg 1x, ./images/portfolio/our-project-2-tablet@2x.jpg 2x"
+                                        media="(min-width: 768px)">
+                                    <source srcset="./images/portfolio/our-project-2-mob.jpg 1x, ./images/portfolio/our-project-2-mob@2x.jpg 2x"
+                                        media="(min-width: 320px)">
+                                    <img class="potfolio__img" src="./images/portfolio/our-project-2-mob.jpg"
+                                        alt="два баскетболиста в синей и белой форме борются за мяч в прыжке">
+                                </picture>
                                 <p class="portfolio__overlay-txt">Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
                                 Quaerat eius, provident nisi accusantium aliquid fugiat enim voluptas molestias 
                                 perspiciatis fuga voluptatibus voluptatum optio modi, odio est reiciendis et magnam
@@ -109,7 +176,16 @@
                     <li class="list portfolio__item">
                         <a class="link portfolio__link" href="">
                             <div class="portfolio__overlay">
-                                <img class="potfolio__img" src="./images/portfolio/our-projects-3.jpg" alt="логотип ресторана Сиафуд " width="370" height="294">
+                                <picture class="picture">
+                                    <source srcset="./images/portfolio/our-project-3-desktop.jpg 1x, ./images/portfolio/our-project-3-desktop@2x.jpg 2x"
+                                        media="(min-width: 1200px)">
+                                    <source srcset="./images/portfolio/our-project-3-tablet.jpg 1x, ./images/portfolio/our-project-3-tablet@2x.jpg 2x"
+                                        media="(min-width: 768px)">
+                                    <source srcset="./images/portfolio/our-project-3-mob.jpg 1x, ./images/portfolio/our-project-3-mob@2x.jpg 2x"
+                                        media="(min-width: 320px)">
+                                    <img class="potfolio__img" src="./images/portfolio/our-project-3-mob.jpg"
+                                        alt="логотип ресторана Сиафуд">
+                                </picture>
                                 <p class="portfolio__overlay-txt">Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
                                 Quaerat eius, provident nisi accusantium aliquid fugiat enim voluptas molestias 
                                 perspiciatis fuga voluptatibus voluptatum optio modi, odio est reiciendis et magnam
@@ -124,7 +200,15 @@
                     <li class="list portfolio__item">
                         <a class="link portfolio__link" href="">
                             <div class="portfolio__overlay">
-                                <img class="potfolio__img" src="./images/portfolio/our-projects-4.jpg" alt="черные наушники на белом фоне" width="370" height="294">
+                                <picture class="picture">
+                                    <source srcset="./images/portfolio/our-project-4-desktop.jpg 1x, ./images/portfolio/our-project-4-desktop@2x.jpg 2x"
+                                        media="(min-width: 1200px)">
+                                    <source srcset="./images/portfolio/our-project-4-tablet.jpg 1x, ./images/portfolio/our-project-4-tablet@2x.jpg 2x"
+                                        media="(min-width: 768px)">
+                                    <source srcset="./images/portfolio/our-project-4-mob.jpg 1x, ./images/portfolio/our-project-4-mob@2x.jpg 2x"
+                                        media="(min-width: 320px)">
+                                    <img class="potfolio__img" src="./images/portfolio/our-project-4-mob.jpg" alt="черные наушники на белом фоне">
+                                </picture>
                                 <p class="portfolio__overlay-txt">Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
                                 Quaerat eius, provident nisi accusantium aliquid fugiat enim voluptas molestias 
                                 perspiciatis fuga voluptatibus voluptatum optio modi, odio est reiciendis et magnam
@@ -139,7 +223,15 @@
                     <li class="list portfolio__item">
                         <a class="link portfolio__link" href="">
                             <div class="portfolio__overlay">
-                                <img class="potfolio__img" src="./images/portfolio/our-projects-5.jpg" alt="две коробочки белого и коричневого цвета" width="370" height="294">
+                                <picture class="picture">
+                                    <source srcset="./images/portfolio/our-project-5-desktop.jpg 1x, ./images/portfolio/our-project-5-desktop@2x.jpg 2x"
+                                        media="(min-width: 1200px)">
+                                    <source srcset="./images/portfolio/our-project-5-tablet.jpg 1x, ./images/portfolio/our-project-5-tablet@2x.jpg 2x"
+                                        media="(min-width: 768px)">
+                                    <source srcset="./images/portfolio/our-project-5-mob.jpg 1x, ./images/portfolio/our-project-5-mob@2x.jpg 2x"
+                                        media="(min-width: 320px)">
+                                    <img class="potfolio__img" src="./images/portfolio/our-project-5-mob.jpg" alt="две коробочки белого и коричневого цвета">
+                                </picture>
                                 <p class="portfolio__overlay-txt">Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
                                 Quaerat eius, provident nisi accusantium aliquid fugiat enim voluptas molestias 
                                 perspiciatis fuga voluptatibus voluptatum optio modi, odio est reiciendis et magnam
@@ -154,7 +246,16 @@
                     <li class="list portfolio__item">
                         <a class="link portfolio__link" href="">
                             <div class="portfolio__overlay">
-                                <img class="potfolio__img" src="./images/portfolio/our-projects-6.jpg" alt="монитор эппл с открытым веб-сайтом " width="370" height="294">
+                                <picture class="picture">
+                                    <source srcset="./images/portfolio/our-project-6-desktop.jpg 1x, ./images/portfolio/our-project-6-desktop@2x.jpg 2x"
+                                        media="(min-width: 1200px)">
+                                    <source srcset="./images/portfolio/our-project-6-tablet.jpg 1x, ./images/portfolio/our-project-6-tablet@2x.jpg 2x"
+                                        media="(min-width: 768px)">
+                                    <source srcset="./images/portfolio/our-project-6-mob.jpg 1x, ./images/portfolio/our-project-6-mob@2x.jpg 2x"
+                                        media="(min-width: 320px)">
+                                    <img class="potfolio__img" src="./images/portfolio/our-project-6-mob.jpg"
+                                        alt="монитор эппл с открытым веб-сайтом">
+                                </picture>
                                 <p class="portfolio__overlay-txt">Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
                                 Quaerat eius, provident nisi accusantium aliquid fugiat enim voluptas molestias 
                                 perspiciatis fuga voluptatibus voluptatum optio modi, odio est reiciendis et magnam
@@ -169,7 +270,15 @@
                     <li class="list portfolio__item">
                         <a class="link portfolio__link" href="">
                             <div class="portfolio__overlay">
-                                <img class="potfolio__img" src="./images/portfolio/our-projects-7.jpg" alt="книга в раскрытом виде с надписью на английском языке - я лимитировання серия" width="370" height="294">
+                                <picture class="picture">
+                                    <source srcset="./images/portfolio/our-project-7-desktop.jpg 1x, ./images/portfolio/our-project-7-desktop@2x.jpg 2x"
+                                        media="(min-width: 1200px)">
+                                    <source srcset="./images/portfolio/our-project-7-tablet.jpg 1x, ./images/portfolio/our-project-7-tablet@2x.jpg 2x"
+                                        media="(min-width: 768px)">
+                                    <source srcset="./images/portfolio/our-project-7-mob.jpg 1x, ./images/portfolio/our-project-7-mob@2x.jpg 2x"
+                                        media="(min-width: 320px)">
+                                    <img class="potfolio__img" src="./images/portfolio/our-project-7-mob.jpg" alt="книга в раскрытом виде с надписью на английском языке - я лимитировання серия">
+                                </picture>
                                 <p class="portfolio__overlay-txt">Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
                                 Quaerat eius, provident nisi accusantium aliquid fugiat enim voluptas molestias 
                                 perspiciatis fuga voluptatibus voluptatum optio modi, odio est reiciendis et magnam
@@ -184,7 +293,16 @@
                     <li class="list portfolio__item">
                         <a class="link portfolio__link" href="">
                             <div class="portfolio__overlay">
-                                <img class="potfolio__img" src="./images/portfolio/our-projects-8.jpg" alt="подвесочка белого цвета" width="370" height="294">
+                                <picture class="picture">
+                                    <source srcset="./images/portfolio/our-project-8-desktop.jpg 1x, ./images/portfolio/our-project-8-desktop@2x.jpg 2x"
+                                        media="(min-width: 1200px)">
+                                    <source srcset="./images/portfolio/our-project-8-tablet.jpg 1x, ./images/portfolio/our-project-8-tablet@2x.jpg 2x"
+                                        media="(min-width: 768px)">
+                                    <source srcset="./images/portfolio/our-project-8-mob.jpg 1x, ./images/portfolio/our-project-8-mob@2x.jpg 2x"
+                                        media="(min-width: 320px)">
+                                    <img class="potfolio__img" src="./images/portfolio/our-project-8-mob.jpg"
+                                        alt="подвесочка белого цвета">
+                                </picture>
                                 <p class="portfolio__overlay-txt">Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
                                 Quaerat eius, provident nisi accusantium aliquid fugiat enim voluptas molestias 
                                 perspiciatis fuga voluptatibus voluptatum optio modi, odio est reiciendis et magnam
@@ -199,7 +317,15 @@
                     <li class="list portfolio__item">
                         <a class="link portfolio__link" href="">
                             <div class="portfolio__overlay">
-                                <img class="potfolio__img" src="./images/portfolio/our-projects-9.jpg" alt="фото сверху как мужчина работает за ноутбуком" width="370" height="294">
+                                <picture class="picture">
+                                    <source srcset="./images/portfolio/our-project-9-desktop.jpg 1x, ./images/portfolio/our-project-9-desktop@2x.jpg 2x"
+                                        media="(min-width: 1200px)">
+                                    <source srcset="./images/portfolio/our-project-9-tablet.jpg 1x, ./images/portfolio/our-project-9-tablet@2x.jpg 2x"
+                                        media="(min-width: 768px)">
+                                    <source srcset="./images/portfolio/our-project-9-mob.jpg 1x, ./images/portfolio/our-project-9-mob@2x.jpg 2x"
+                                        media="(min-width: 320px)">
+                                    <img class="potfolio__img" src="./images/portfolio/our-project-9-mob.jpg" alt="фото сверху как мужчина работает за ноутбуком">
+                                </picture>
                                 <p class="portfolio__overlay-txt">Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
                                 Quaerat eius, provident nisi accusantium aliquid fugiat enim voluptas molestias 
                                 perspiciatis fuga voluptatibus voluptatum optio modi, odio est reiciendis et magnam
@@ -218,55 +344,57 @@
     
     <footer class="footer">
         <div class="container footer__container">
-            <div class="footer__navigation">
-                <a class="logo link" href="./index.html"> Web<span class="logo_theme-dark">Studio</span></a>
-                <address class="address">
-                    <ul class="list footer__list">
-                        <li class="footer__item">
-                            <a class="footer__address link" href="https://goo.gl/maps/CNWoaTKzeVFjFcxj6" target="_blank"
-                                rel="noopener noreferrer">г. Киев, пр-т Леси Украинки, 26</a>
+            <div class="footer__contact">
+                <div class="footer__navigation">
+                    <a class="logo link" href="./index.html"> Web<span class="logo_theme-dark">Studio</span></a>
+                    <address class="address">
+                        <ul class="list footer__list">
+                            <li class="footer__item">
+                                <a class="footer__address link" href="https://goo.gl/maps/CNWoaTKzeVFjFcxj6" target="_blank"
+                                    rel="noopener noreferrer">г. Киев, пр-т Леси Украинки, 26</a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__mail-tel link" href="mailto:info@example.com">info@example.com</a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__mail-tel link" href="tel:+380991111111">+38 099 111 11 11</a>
+                            </li>
+                        </ul>
+                    </address>
+                </div>
+                <div class="footer__social">
+                    <p class="footer__social-title">Присоединяйтесь</p>
+                    <ul class="footer__social-list list">
+                        <li class="footer__social-item">
+                            <a href="" class="footer__social-link">
+                                <svg width="20x" height="20px">
+                                    <use href="./images/sprites.svg#icon-instagram"></use>
+                                </svg>
+                            </a>
                         </li>
-                        <li class="footer__item">
-                            <a class="footer__mail-tel link" href="mailto:info@example.com">info@example.com</a>
+                        <li class="footer__social-item">
+                            <a href="" class="footer__social-link">
+                                <svg width="20x" height="20px">
+                                    <use href="./images/sprites.svg#icon-twitter"></use>
+                                </svg>
+                            </a>
                         </li>
-                        <li class="footer__item">
-                            <a class="footer__mail-tel link" href="tel:+380991111111">+38 099 111 11 11</a>
+                        <li class="footer__social-item">
+                            <a href="" class="footer__social-link">
+                                <svg width="20x" height="20px">
+                                    <use href="./images/sprites.svg#icon-facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footer__social-item">
+                            <a href="" class="footer__social-link">
+                                <svg width="20x" height="20px">
+                                    <use href="./images/sprites.svg#icon-linkedin"></use>
+                                </svg>
+                            </a>
                         </li>
                     </ul>
-                </address>
-            </div>
-            <div class="footer__social">
-                <p class="footer__social-title">Присоединяйтесь</p>
-                <ul class="footer__social-list list">
-                    <li class="footer__social-item">
-                        <a href="" class="footer__social-link">
-                            <svg width="20x" height="20px">
-                                <use href="./images/sprites.svg#icon-instagram"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="footer__social-item">
-                        <a href="" class="footer__social-link">
-                            <svg width="20x" height="20px">
-                                <use href="./images/sprites.svg#icon-twitter"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="footer__social-item">
-                        <a href="" class="footer__social-link">
-                            <svg width="20x" height="20px">
-                                <use href="./images/sprites.svg#icon-facebook"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="footer__social-item">
-                        <a href="" class="footer__social-link">
-                            <svg width="20x" height="20px">
-                                <use href="./images/sprites.svg#icon-linkedin"></use>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
+                </div>
             </div>
             <div class="footer__form">
                 <p class="footer__form-title">подпишитесь на рассылку</p>
@@ -283,6 +411,7 @@
             </div>
         </div>
     </footer>
-    
+        
+    <script src="./js/mobile-menu.js"></script>
 </body>
 </html>

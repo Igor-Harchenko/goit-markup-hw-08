@@ -1,5 +1,23 @@
-.portfolio__section {
-  padding-top: 100px;
-  padding-bottom: 94px;
-  margin: 0 auto;
+@media screen and (max-width: 767px) {
+  .portfolio__section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio__section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio__section {
+    padding-top: 100px;
+    padding-bottom: 94px;
+    margin: 0 auto;
+  }
 }

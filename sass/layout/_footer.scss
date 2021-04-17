@@ -13,6 +13,26 @@
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer {
+    background-color: var(--footer-background-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .footer__container {
+    display: flex;
+    flex-direction: column;
+    padding-left: 76px;
+    padding-right: 90px;
+  }
+
+  .footer__contact {
+    display: flex;
+    margin-bottom: 60px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .footer {
     display: flex;

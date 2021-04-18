@@ -535,7 +535,8 @@ a {
 
 @media screen and (max-width: 767px) {
   .header {
-    width: 480px;
+    min-width: 480px;
+    width: 100%;
     padding-top: 10px;
     padding-bottom: 10px;
     background-color: var(--header-background-color);
@@ -1340,6 +1341,7 @@ a {
 @media screen and (max-width: 767px) {
   .footer {
     min-width: 480px;
+    width: 100%;
     background-color: var(--footer-background-color);
     padding-top: 60px;
     padding-bottom: 60px;

@@ -1145,7 +1145,8 @@ a {
 
 @media screen and (max-width: 767px) {
   .header {
-    width: 480px;
+    min-width: 480px;
+    width: 100%;
     padding-top: 10px;
     padding-bottom: 10px;
     background-color: var(--header-background-color);
@@ -1698,6 +1699,9 @@ a {
   .about {
     padding-top: 60px;
     padding-bottom: 60px;
+    min-width: 480px;
+    max-width: 767px;
+    width: 100%;
   }
   .about__item {
     display: flex;
@@ -1740,6 +1744,7 @@ a {
   .about {
     padding-bottom: 60px;
     padding-top: 60px;
+    margin: 0 auto;
   }
   .about__list {
     display: flex;
@@ -1895,6 +1900,7 @@ a {
 @media screen and (max-width: 767px) {
   .team {
     min-width: 480px;
+    width: 100%;
     background-color: var(--background-btn-color);
     background-size: contain;
     padding-top: 60px;
@@ -2112,7 +2118,8 @@ a {
 
 @media screen and (max-width: 767px) {
   .client {
-    width: 480px;
+    min-width: 480px;
+    width: 100%;
     padding-top: 60px;
     padding-bottom: 60px;
     margin: 0 auto;
@@ -2250,6 +2257,7 @@ a {
 @media screen and (max-width: 767px) {
   .footer {
     min-width: 480px;
+    width: 100%;
     background-color: var(--footer-background-color);
     padding-top: 60px;
     padding-bottom: 60px;
